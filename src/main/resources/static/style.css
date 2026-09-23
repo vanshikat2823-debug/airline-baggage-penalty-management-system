@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #111827;
+
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.header-content h1 {
+    font-size: 26px;
+
+    margin-bottom: 6px;
+}
+
+
+.header-content p {
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    font-family: inherit;
+}
+
+
+.refresh-button,
+.primary-button,
+.secondary-button,
+.cancel-button,
+.edit-button,
+.delete-button {
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.refresh-button {
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 12px 20px;
+}
+
+
+.refresh-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+.primary-button {
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 12px 22px;
+}
+
+
+.primary-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+.secondary-button {
+    background-color: #e2e8f0;
+
+    color: #1e293b;
+
+    padding: 11px 18px;
+}
+
+
+.secondary-button:hover {
+    background-color: #cbd5e1;
+}
+
+
+.cancel-button {
+    background-color: #e5e7eb;
+
+    color: #374151;
+
+    padding: 12px 22px;
+}
+
+
+.cancel-button:hover {
+    background-color: #d1d5db;
+}
+
+
+.edit-button {
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 8px 14px;
+
+    margin-right: 6px;
+}
+
+
+.edit-button:hover {
+    background-color: #1d4ed8;
+}
+
+
+.delete-button {
+    background-color: #dc2626;
+
+    color: white;
+
+    padding: 8px 14px;
+}
+
+
+.delete-button:hover {
+    background-color: #b91c1c;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.dashboard-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 25px;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+
+.welcome-section h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome-section p {
+    color: #64748b;
+}
+
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.cards-container {
+    display: grid;
+
+    grid-template-columns:
+            repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+}
+
+
+.dashboard-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+            0 4px 15px rgba(0, 0, 0, 0.08);
+
+    border-left: 5px solid #2563eb;
+}
+
+
+.passengers-card {
+    border-left-color: #2563eb;
+}
+
+
+.baggage-card {
+    border-left-color: #7c3aed;
+}
+
+
+.exceeded-card {
+    border-left-color: #dc2626;
+}
+
+
+.within-card {
+    border-left-color: #16a34a;
+}
+
+
+.penalty-card {
+    border-left-color: #ea580c;
+}
+
+
+.card-title {
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.card-value {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: #111827;
+}
+
+
+/* =========================
+   BAGGAGE STATUS
+========================= */
+
+.status-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+            0 4px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.status-section h2 {
+    margin-bottom: 20px;
+}
+
+
+.status-container {
+    display: grid;
+
+    grid-template-columns:
+            repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+
+.status-box {
+    background-color: #f8fafc;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.status-label {
+    font-weight: bold;
+
+    color: #475569;
+}
+
+
+.status-box span:last-child {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #111827;
+}
+
+
+/* =========================
+   MANAGEMENT SECTION
+========================= */
+
+.management-section {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+            0 4px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.section-header h2 {
+    font-size: 24px;
+
+    margin-bottom: 6px;
+}
+
+
+.section-header p {
+    color: #64748b;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+    background-color: #f8fafc;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.form-container h3 {
+    margin-bottom: 20px;
+
+    font-size: 19px;
+}
+
+
+#airlineForm {
+    display: grid;
+
+    grid-template-columns:
+            repeat(3, 1fr);
+
+    gap: 20px;
+
+    align-items: end;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #374151;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+            0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+.form-buttons {
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   AIRLINE MESSAGE
+========================= */
+
+.airline-message {
+    min-height: 24px;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+thead {
+    background-color: #111827;
+
+    color: white;
+}
+
+
+th,
+td {
+    padding: 14px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    font-size: 14px;
+}
+
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+
+.empty-row {
+    text-align: center;
+
+    color: #64748b;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   SYSTEM INFORMATION
+========================= */
+
+.info-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+            0 4px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.info-section h2 {
+    margin-bottom: 15px;
+}
+
+
+.info-section p {
+    color: #64748b;
+
+    margin-bottom: 10px;
+}
+
+
+.info-section strong {
+    color: #2563eb;
+}
+
+
+/* =========================
+   GLOBAL MESSAGE
+========================= */
+
+.message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #111827;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    #airlineForm {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .header-content h1 {
+        font-size: 21px;
+    }
+
+
+    .refresh-button {
+        width: 100%;
+    }
+
+
+    .dashboard-container {
+        padding: 25px 15px;
+    }
+
+
+    .welcome-section h2 {
+        font-size: 23px;
+    }
+
+
+    .management-section {
+        padding: 20px;
+    }
+
+
+    .section-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .secondary-button {
+        width: 100%;
+    }
+
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+
+    .form-buttons button {
+        width: 100%;
+    }
+
+}
